@@ -1,0 +1,1 @@
+### This repository contains code snippets and examples from the book "The Go Programming Language (Addison-Wesley Professional Computing Series)"
