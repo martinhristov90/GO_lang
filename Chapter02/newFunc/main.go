@@ -1,10 +1,10 @@
 package main
 
-import ( 
+import (
 	"fmt"
 )
 
-func main(){
+func main() {
 	p := new(int)
 	fmt.Println(*p)
 	*p = 2

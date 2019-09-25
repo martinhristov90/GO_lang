@@ -1,4 +1,4 @@
-// F to C convertion 
+// F to C convertion
 package main
 
 import (
@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	const freezingF,boilingF = 32.0,212.0
+	const freezingF, boilingF = 32.0, 212.0
 	fmt.Printf("%gF = %gC", freezingF, fToC(freezingF))
 	fmt.Printf("%gF = %gC", boilingF, fToC(boilingF))
 	fmt.Printf("%gF = %gC", boilingF, fToC(boilingF))

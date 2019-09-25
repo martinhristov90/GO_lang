@@ -4,10 +4,9 @@ import (
 	"fmt"
 )
 
-
 func main() {
-	i,j,k := 1,2,3
+	i, j, k := 1, 2, 3
 
-	fmt.Println(i,j,k)
-	
+	fmt.Println(i, j, k)
+
 }

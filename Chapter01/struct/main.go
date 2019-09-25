@@ -1,8 +1,7 @@
 package main
 
-func main(){
+func main() {
 	type Point struct {
 		X, Y int
 	}
 }
-

@@ -1,4 +1,5 @@
 package main
+
 // interesting example using pointer for calculating area of square
 import (
 	"fmt"

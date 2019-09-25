@@ -4,9 +4,8 @@ import (
 	"fmt"
 )
 
- 
 func main() {
-	fmt.Println("Value of x from function test is :",*test())
+	fmt.Println("Value of x from function test is :", *test())
 }
 
 func test() *int {

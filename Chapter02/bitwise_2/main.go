@@ -1,4 +1,5 @@
 package main
+
 // Determines if a number is odd or even using AND bitwise operator
 import (
 	"fmt"
@@ -7,7 +8,7 @@ import (
 
 func main() {
 
-//	rand.Seed(1234)
+	//	rand.Seed(1234)
 
 	var num int = rand.Int()
 	fmt.Printf("Randomly generated number is : %d\n", num)
