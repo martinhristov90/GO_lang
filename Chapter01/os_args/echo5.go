@@ -9,7 +9,7 @@ import (
 
 func main() {
 	for arg_num, arg := range os.Args[1:] {
-		fmt.Print("Arg num: ", arg_num + 1, " - ")
+		fmt.Print("Arg num: ", arg_num+1, " - ")
 		fmt.Print("Arg content: ", arg, "\n")
 	}
 }

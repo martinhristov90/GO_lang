@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-func main () {
+func main() {
 	counts := make(map[string]int)
 	files := os.Args[1:]
 	//file_line_dups := ""
@@ -24,15 +24,13 @@ func main () {
 			f.Close()
 		}
 	}
-	for line,n := range counts {
+	for line, n := range counts {
 		if n > 1 {
-			fmt.Printf("%d\t%s\n",n,line)
+			fmt.Printf("%d\t%s\n", n, line)
 		}
 	}
 
-	}
-
-
+}
 
 func countLines(f *os.File, counts map[string]int) {
 	input := bufio.NewScanner(f)
