@@ -1,0 +1,1 @@
+### Article used - [here](https://medium.com/learning-the-go-programming-language/bit-hacking-with-go-e0acee258827)

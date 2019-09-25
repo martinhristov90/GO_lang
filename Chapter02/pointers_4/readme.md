@@ -1,0 +1,1 @@
+[taken from here](https://medium.com/rungo/pointers-in-go-a789eafccd53)
