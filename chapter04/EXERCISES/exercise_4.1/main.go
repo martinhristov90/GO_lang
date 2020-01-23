@@ -1,6 +1,8 @@
 //“Exercise 4.1: Write a function that counts the number of bits that are different in two SHA256 hashes. (See PopCount from Section 2.6.2.)”
 
 // A.K.A finding hamming distance of c1 and c2
+// hamming distance is the number of differing "bits".
+
 
 package main
 
