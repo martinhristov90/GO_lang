@@ -23,10 +23,10 @@ type BarFlag struct {
 func (press *BarFlag) Set(s string) error {
 
 	var unit string
-	var value int
+	var value float64
 	//fmt.Printf("%q\n",s)
 
-	_, err := fmt.Sscanf(s, "%d%s", &value, &unit) // Why it does not work with %f for floating point with 45PSI ?
+	_, err := fmt.Sscanf(s, "%f%s", &value, &unit) // Why it does not work with %f for floating point with 45PSI ?
 	if err != nil {
 		return fmt.Errorf("Error while parsing arguments %v\n", err)
 	}
@@ -38,12 +38,12 @@ func (press *BarFlag) Set(s string) error {
 	case "Ba", "Bar":
 		press.Bar = Bar(value)
 		return nil
-	case "PSI", "psi":
+	case "PSI", "psi", "Tar" :
 		press.Bar = PSIToBar(PSI(value))
 		return nil
 	}
 
-	return fmt.Errorf("Cannot handle temp %q ", s)
+	return fmt.Errorf("Cannot handle pressure %q ", s)
 }
 
 func PressureFlag(name string, value Bar, usage string) *Bar {
