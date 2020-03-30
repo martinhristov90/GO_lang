@@ -1,28 +1,32 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
+
 	naturals := make(chan int)
 	squares := make(chan int)
 
-	// Counter
 	go func() {
-		for x := 0; ; x++ {
-			naturals <- x
+		for i := 0; ; i++ {
+			naturals <- i
 		}
 	}()
 
-	// Squarer
 	go func() {
 		for {
 			x := <-naturals
 			squares <- x * x
+
 		}
 	}()
 
-	// Printer (in main goroutine)
 	for {
 		fmt.Println(<-squares)
+		time.Sleep(1 * time.Second)
 	}
+
 }
