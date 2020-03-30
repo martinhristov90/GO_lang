@@ -1,4 +1,5 @@
 package main
+// The flaw of this code is that the second client needs to wait for the first one to terminate the connection in order to get reply.
 
 import(
 	"io"
