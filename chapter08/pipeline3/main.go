@@ -28,6 +28,6 @@ func main() {
 	squares := make(chan int)
 
 	go counter(naturals)
-	go squarer(squares, naturals)
+	go squarer(squares, naturals) 
 	printer(squares)
 }
